@@ -1,0 +1,4 @@
+version_control: gitlab.gnome
+src_repo: mobile-broadband-provider-info
+tag_prefix: MOBILE_BROADBAND_PROVIDER_INFO_
+seperator: "."
