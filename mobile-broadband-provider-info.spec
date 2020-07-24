@@ -52,11 +52,9 @@ make check
 %doc README
 
 %changelog
-* Tue Jun 18 2019 openEuler Buildteam <buildteam@openeuler.org> - 20190618-0
-- Type: enhancement
-- ID:   NA
-- SUG:  NA
-- DESC: Update to 20190618, add help package.
+* Fri Jul 24 2020 openEuler Buildteam <buildteam@openeuler.org> - 20190618-0
+- updata package
+
 
 - Type: enhancement
 - ID:   NA
