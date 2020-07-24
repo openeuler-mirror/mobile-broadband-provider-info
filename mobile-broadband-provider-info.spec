@@ -1,12 +1,12 @@
 Name:          mobile-broadband-provider-info
-Version:       20190116
-Release:       1
+Version:       20190618
+Release:       0
 Summary:       Mobile broadband provider database
 License:       Public Domain
 URL:           https://live.gnome.org/NetworkManager/MobileBroadband/ServiceProviders
-Source0:       https://ftp.gnome.org/pub/gnome/sources/mobile-broadband-provider-info/%{version}/%{name}-%{version}.tar.xz
+Source0:       https://ftp.gnome.org/pub/gnome/sources/mobile-broadband-provider-info/%{version}/%{name}-%{version}.tar
 
-BuildRequires: libxml2
+BuildRequires: libxml2 /usr/bin/xsltproc /usr/bin/xmllint
 BuildArch:     noarch
 
 %description
@@ -25,10 +25,13 @@ The Development package for mobile-broadband-provider-info.
 %package_help
 
 %prep
-%autosetup -n %{name}-%{version}
+%autosetup -n %{name}-%{version} -p1
+bash autogen.sh
 
 %build
 %configure
+
+
 %make_build
 
 %check
@@ -49,7 +52,12 @@ make check
 %doc README
 
 %changelog
-* Wed Sep 04 2019 openEuler Buildteam <buildteam@openeuler.org> - 20190116-1
+* Tue Jun 18 2019 openEuler Buildteam <buildteam@openeuler.org> - 20190618-0
+- Type: enhancement
+- ID:   NA
+- SUG:  NA
+- DESC: Update to 20190618, add help package.
+
 - Type: enhancement
 - ID:   NA
 - SUG:  NA
