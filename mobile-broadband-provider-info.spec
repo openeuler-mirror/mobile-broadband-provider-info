@@ -1,5 +1,5 @@
 Name:          mobile-broadband-provider-info
-Version:       20190618
+Version:       20201225
 Release:       1
 Summary:       Mobile broadband provider database
 License:       Public Domain
@@ -51,6 +51,12 @@ make check
 %doc README
 
 %changelog
+* Thu Jan 28 2021 hanhui <hanhui15@huawei.com> - 20201225-1
+- Type: enhancement
+- ID:   NA
+- SUG:  NA
+- DESC: update to 20201225
+
 * Mon Jul 27 2020 openEuler Buildteam <buildteam@openeuler.org> - 20190618-1
 - Type: enhancement
 - ID:   NA
