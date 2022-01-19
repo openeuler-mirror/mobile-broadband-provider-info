@@ -1,10 +1,12 @@
 Name:          mobile-broadband-provider-info
 Version:       20210805
-Release:       1
+Release:       2
 Summary:       Mobile broadband provider database
 License:       Public Domain
 URL:           https://live.gnome.org/NetworkManager/MobileBroadband/ServiceProviders
 Source0:       https://ftp.gnome.org/pub/gnome/sources/mobile-broadband-provider-info/%{version}/%{name}-%{version}.tar.xz
+
+Patch9000:     mobile-broadband-provider-info-deal-taboo-words.patch
 
 BuildRequires: libxml2 /usr/bin/xsltproc /usr/bin/xmllint
 BuildArch:     noarch
@@ -51,6 +53,9 @@ make check
 %doc README
 
 %changelog
+* Mon Jan 17 2022 xingxing <xingxing9@huawei.com> - 20210805-2
+- deal taboo words
+
 * Mon Dec 06 2021 wuchaochao <wuchaochao4@huawei.com> - 20210805-1
 - update version to 20210805
 

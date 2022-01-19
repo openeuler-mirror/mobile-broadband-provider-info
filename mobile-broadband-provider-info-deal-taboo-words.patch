@@ -1,0 +1,26 @@
+From 99f83aaecb23b629e293fad51a6a06ea3b5a1751 Mon Sep 17 00:00:00 2001
+From: zhangrui <zhangrui182@huawei.com>
+Date: Sat, 30 May 2020 14:05:35 +0800
+Subject: [PATCH] mobile-broadband-provider-info deal taboo words
+
+---
+ serviceproviders.xml | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/serviceproviders.xml b/serviceproviders.xml
+index e7f36ac..460c6f0 100644
+--- a/serviceproviders.xml
++++ b/serviceproviders.xml
+@@ -12564,9 +12564,9 @@ conceived.
+ 			<!--
+ 				KKTC Telsim was a subsidiary of Telsim Group in Turkey which was taken
+ 				over by the Vodafone Group 2006 and rebranded as Vodafone in 2007.
+-				Due to the political situation in Northern Cyprus the company shares the
++				Due to the political situation in North Cyprus the company shares the
+ 				Vodafone Turkey MCC and MNC codes although it is logically a separate
+-				operator. The brand KKTC Telsim is still used in Northern Cyprus due to
++				operator. The brand KKTC Telsim is still used in North Cyprus due to
+ 				Vodafone Group agreements with Cytamobile-Vodafone in Southern Cyprus.
+ 			-->
+ 			<apn value="edge.kktctelsim.com">
+
